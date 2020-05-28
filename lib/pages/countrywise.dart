@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:dio/dio.dart'; //same as http in home
+import 'package:covid_19_tracker/pages/search.dart';
 
 class CountryWise extends StatefulWidget {
   @override
@@ -59,6 +60,11 @@ class _CountryWiseState extends State<CountryWise> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
+//          actions: <Widget>[
+//            IconButton(icon: Icon(Icons.search),onPressed: (){
+//              showSearch(context: context, delegate: Search(datas));
+//            },)
+//          ],
           title: Text(
             'CountryWise',
             style: TextStyle(fontFamily: "Signatra"),

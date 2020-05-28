@@ -1,5 +1,6 @@
 import 'dart:convert';
 
+import 'package:covid_19_tracker/pages/countrypage.dart';
 import 'package:covid_19_tracker/pages/countrywise.dart';
 import 'package:covid_19_tracker/pages/totalcases.dart';
 import 'package:flutter/cupertino.dart';
@@ -49,7 +50,7 @@ class _HomePageState extends State<HomePage> {
   }
 
   navigateToCountryWise() async{
-    await Navigator.push(context, MaterialPageRoute(builder: (context)=>CountryWise()));
+    await Navigator.push(context, MaterialPageRoute(builder: (context)=>CountryPage()));
   }
 
   navigateToNepalCase() async{
