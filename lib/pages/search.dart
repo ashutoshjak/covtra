@@ -33,7 +33,7 @@ class Search extends SearchDelegate {
   @override
   Widget buildResults(BuildContext context) {
     // TODO: implement buildResults
-    return Container();
+    return Text(""); //Container();
   }
 
   @override

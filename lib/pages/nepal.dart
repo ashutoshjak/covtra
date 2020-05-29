@@ -73,7 +73,7 @@ class _NepalState extends State<Nepal> {
                               fontSize: 20.0),
                         ),
                         Text(
-                          "Tested Total",
+                          "PCR Test",    //Tested total
                           style: TextStyle(
                               color: Colors.black,
                               fontWeight: FontWeight.bold,
