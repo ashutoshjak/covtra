@@ -60,24 +60,24 @@ class _NepalState extends State<Nepal> {
                       children: <Widget>[
                         Text(
                           "Positive",
-                          style: TextStyle(
+                          style: TextStyle( //before 20
                               color: Colors.black,
                               fontWeight: FontWeight.bold,
-                              fontSize: 20.0),
+                              fontSize: 16.0),
                         ),
                         Text(
                           "Negative",
                           style: TextStyle(
                               color: Colors.black,
                               fontWeight: FontWeight.bold,
-                              fontSize: 20.0),
+                              fontSize: 16.0),
                         ),
                         Text(
                           "PCR Test",    //Tested total
                           style: TextStyle(
                               color: Colors.black,
                               fontWeight: FontWeight.bold,
-                              fontSize: 20.0),
+                              fontSize: 16.0),
                         )
                       ],
                     ),
@@ -107,21 +107,21 @@ class _NepalState extends State<Nepal> {
                                   "${covid.tested_positive}",
                                   style: TextStyle(
                                       color: Colors.orange,
-                                      fontSize: 23.0,
+                                      fontSize: 16.0,
                                       fontWeight: FontWeight.bold),
                                 ),
                                 Text(
                                   "${covid.tested_negative}",
                                   style: TextStyle(
                                       color: Colors.red,
-                                      fontSize: 23.0,
+                                      fontSize: 16.0,
                                       fontWeight: FontWeight.bold),
                                 ),
                                 Text(
                                   "${covid.tested_total}",
                                   style: TextStyle(
                                       color: Colors.green,
-                                      fontSize: 23.0,
+                                      fontSize: 16.0,
                                       fontWeight: FontWeight.bold),
                                 )
                               ],
@@ -152,21 +152,21 @@ class _NepalState extends State<Nepal> {
                           style: TextStyle(
                               color: Colors.black,
                               fontWeight: FontWeight.bold,
-                              fontSize: 20.0),
+                              fontSize: 16.0),
                         ),
                         Text(
                           "Quarantied",
                           style: TextStyle(
                               color: Colors.black,
                               fontWeight: FontWeight.bold,
-                              fontSize: 20.0),
+                              fontSize: 16.0),
                         ),
                         Text(
                           "RTD Test",
                           style: TextStyle(
                               color: Colors.black,
                               fontWeight: FontWeight.bold,
-                              fontSize: 20.0),
+                              fontSize: 16.0),
                         )
                       ],
                     ),
@@ -196,21 +196,21 @@ class _NepalState extends State<Nepal> {
                                   "${covid.in_isolation}",
                                   style: TextStyle(
                                       color: Colors.orange,
-                                      fontSize: 23.0,
+                                      fontSize: 16.0,
                                       fontWeight: FontWeight.bold),
                                 ),
                                 Text(
                                   "${covid.quarantined}",
                                   style: TextStyle(
                                       color: Colors.red,
-                                      fontSize: 23.0,
+                                      fontSize: 16.0,
                                       fontWeight: FontWeight.bold),
                                 ),
                                 Text(
                                   "${covid.tested_rdt}",
                                   style: TextStyle(
                                       color: Colors.green,
-                                      fontSize: 23.0,
+                                      fontSize: 16.0,
                                       fontWeight: FontWeight.bold),
                                 )
                               ],
@@ -241,14 +241,14 @@ class _NepalState extends State<Nepal> {
                           style: TextStyle(
                               color: Colors.black,
                               fontWeight: FontWeight.bold,
-                              fontSize: 20.0),
+                              fontSize: 16.0),
                         ),
                         Text(
                           "Recovered",
                           style: TextStyle(
                               color: Colors.black,
                               fontWeight: FontWeight.bold,
-                              fontSize: 20.0),
+                              fontSize: 16.0),
                         )
                       ],
                     ),
@@ -278,14 +278,14 @@ class _NepalState extends State<Nepal> {
                                   "${covid.deaths}",
                                   style: TextStyle(
                                       color: Colors.red,
-                                      fontSize: 23.0,
+                                      fontSize: 16.0,
                                       fontWeight: FontWeight.bold),
                                 ),
                                 Text(
                                   "${covid.recovered}",
                                   style: TextStyle(
                                       color: Colors.green,
-                                      fontSize: 23.0,
+                                      fontSize: 16.0,
                                       fontWeight: FontWeight.bold),
                                 )
                               ],

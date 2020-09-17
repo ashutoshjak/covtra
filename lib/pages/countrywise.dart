@@ -2,6 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:dio/dio.dart'; //same as http in home
 import 'package:covid_19_tracker/pages/search.dart';
 
+
+//this is useless not using just kept for backup
+
 class CountryWise extends StatefulWidget {
   @override
   _CountryWiseState createState() => _CountryWiseState();

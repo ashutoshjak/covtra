@@ -247,22 +247,22 @@ class _HomePageState extends State<HomePage> {
                             "Total Cases",
                             style: TextStyle(
                                 color: Colors.black,
-                                fontWeight: FontWeight.bold,
-                                fontSize: 20.0),
+                                fontWeight: FontWeight.bold, //20 previous
+                                fontSize: 16.0),
                           ),
                           Text(
                             "Deaths",
                             style: TextStyle(
                                 color: Colors.black,
                                 fontWeight: FontWeight.bold,
-                                fontSize: 20.0),
+                                fontSize: 16.0),
                           ),
                           Text(
                             "Recovered",
                             style: TextStyle(
                                 color: Colors.black,
                                 fontWeight: FontWeight.bold,
-                                fontSize: 20.0),
+                                fontSize: 16.0),
                           )
                         ],
                       ),
@@ -291,22 +291,22 @@ class _HomePageState extends State<HomePage> {
                                   Text(
                                     "${covid.cases}",
                                     style: TextStyle(
-                                        color: Colors.orange,
-                                        fontSize: 23.0,
+                                        color: Colors.orange,  //23
+                                        fontSize: 16.0,
                                         fontWeight: FontWeight.bold),
                                   ),
                                   Text(
                                     "${covid.deaths}",
                                     style: TextStyle(
                                         color: Colors.red,
-                                        fontSize: 23.0,
+                                        fontSize: 16.0,
                                         fontWeight: FontWeight.bold),
                                   ),
                                   Text(
                                     "${covid.recovered}",
                                     style: TextStyle(
                                         color: Colors.green,
-                                        fontSize: 23.0,
+                                        fontSize: 16.0,
                                         fontWeight: FontWeight.bold),
                                   )
                                 ],
