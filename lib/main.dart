@@ -1,4 +1,5 @@
 import 'package:covid_19_tracker/pages/homepage.dart';
+import 'package:covid_19_tracker/pages/mybottomnav.dart';
 import 'package:flutter/material.dart';
 
 
@@ -14,7 +15,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primaryColor: Colors.black,
       ),
-      home: HomePage(),
+      home: MyBottomNavigationBar(),
     );
   }
 }

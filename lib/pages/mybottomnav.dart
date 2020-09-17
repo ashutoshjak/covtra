@@ -1,6 +1,5 @@
+import 'package:covid_19_tracker/pages/form.dart';
 import 'package:flutter/material.dart';
-//import 'package:lbladmin/pages/addbook.dart';
-//import 'package:lbladmin/pages/requestbookpage.dart';
 import 'package:covid_19_tracker/pages/homepage.dart';
 
 
@@ -13,9 +12,8 @@ class _MyBottomNavigationBarState extends State<MyBottomNavigationBar> {
 
   int _currentIndex=0;
   final List<Widget>_children=[
-//    AddBook(),
-//    RequestBook(),
-  HomePage(),
+    HomePage(),
+    Forms(),
 
   ];
 
@@ -33,7 +31,7 @@ class _MyBottomNavigationBarState extends State<MyBottomNavigationBar> {
       body: _children[_currentIndex],
 
       bottomNavigationBar: BottomNavigationBar(
-        backgroundColor: Colors.brown[100],
+        backgroundColor: Colors.grey,
         type: BottomNavigationBarType.fixed,
         onTap:  onTappedBar,
 

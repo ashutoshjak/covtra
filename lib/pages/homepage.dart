@@ -6,7 +6,6 @@ import 'package:covid_19_tracker/pages/totalcases.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
-import 'package:covid_19_tracker/pages/totalcases.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:covid_19_tracker/pages/nepal.dart';
 
@@ -329,40 +328,56 @@ class _HomePageState extends State<HomePage> {
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: <Widget>[
-                      Card(
-                        child: Container(
-                          child: Center(
-                            child: Column(
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              crossAxisAlignment: CrossAxisAlignment.center,
-                              children: <Widget>[
-                                Image(image: AssetImage("assets/images/nepal.png"),height: 90,width: 90,),
-                                Padding(padding: EdgeInsets.all(10.0),),
-                                OutlineButton(
-                                  onPressed: ()=>navigateToNepalCase(),
-                                  child: Text('Nepal Statisics',style: TextStyle(fontSize: 15.0,color: Colors.black,fontWeight: FontWeight.bold),),
-                                )
+                      InkWell(
+                        onTap:()=>navigateToNepalCase(),
+                        child: Card(
+                          child: Container(
+                            child: Center(
+                              child: Column(
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                crossAxisAlignment: CrossAxisAlignment.center,
+                                children: <Widget>[
+                                  Image(image: AssetImage("assets/images/nepal.png"),height: 90,width: 90,),
+                                  Padding(padding: EdgeInsets.all(10.0),),
+                                  Padding(
+                                    padding: const EdgeInsets.only(left: 15,
+                                        right: 15,bottom: 15),
+                                    child: Text('Nepal Statisics',style: TextStyle(fontSize: 15.0,color: Colors.black,fontWeight: FontWeight.bold),),
+                                  ),
+//                                  OutlineButton(
+//                                    onPressed: ()=>navigateToNepalCase(),
+//                                    child: Text('Nepal Statisics',style: TextStyle(fontSize: 15.0,color: Colors.black,fontWeight: FontWeight.bold),),
+//                                  )
 
-                              ],
+                                ],
+                              ),
                             ),
                           ),
                         ),
                       ),
-                      Card(
-                        child: Container(
-                          child: Center(
-                            child: Column(
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              crossAxisAlignment: CrossAxisAlignment.center,
-                              children: <Widget>[
-                                Image(image: AssetImage("assets/images/globe.png"),height: 90,width: 90,),
-                                Padding(padding: EdgeInsets.all(10.0),),
-                                OutlineButton(
-                                  onPressed: ()=>navigateToCountryWise(),
-                                  child: Text('CountryWise Statisics',style: TextStyle(fontSize: 15.0,color: Colors.black,fontWeight: FontWeight.bold),),
-                                )
+                      InkWell(
+                        onTap: ()=>navigateToCountryWise(),
+                        child: Card(
+                          child: Container(
+                            child: Center(
+                              child: Column(
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                crossAxisAlignment: CrossAxisAlignment.center,
+                                children: <Widget>[
+                                  Image(image: AssetImage("assets/images/globe.png"),height: 90,width: 90,),
+                                  Padding(padding: EdgeInsets.all(10.0),),
+                                  Padding(
+                                    padding: const EdgeInsets.only(left: 15,
+                                    right: 15,bottom: 15),
+                                    child: Text('CountryWise Statisics',style: TextStyle(fontSize: 15.0,color: Colors.black,fontWeight: FontWeight.bold),),
+                                  ),
+//                                  OutlineButton(
+//                                    onPressed: ()=>navigateToCountryWise(),
+//                                    child: Text('CountryWise Statisics',style: TextStyle(fontSize: 15.0,color: Colors.black,fontWeight: FontWeight.bold),),
+//                                  )
 
-                              ],
+                                ],
+                              ),
                             ),
                           ),
                         ),
@@ -371,20 +386,30 @@ class _HomePageState extends State<HomePage> {
                   ),
                 ),
                 Padding(padding: EdgeInsets.only(top:15.0),),
-                Card(
-                  child: Container(
-                    padding: EdgeInsets.only(left:5.0,right: 5.0),
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      crossAxisAlignment: CrossAxisAlignment.stretch,
-                      children: <Widget>[
-                        Image(image: AssetImage("assets/images/inq.jpg"),height: 90,width: 90,),
-                        Padding(padding: EdgeInsets.all(10.0),),
-                        OutlineButton(
-                          onPressed: ()=>navigateToWHO("https://www.who.int/health-topics/coronavirus#tab=tab_1"),
-                          child: Text('Know More',style: TextStyle(fontSize: 15.0,color: Colors.black,fontWeight: FontWeight.bold),),
-                        )
-                      ],
+                InkWell(
+                  onTap:()=>navigateToWHO("https://www.who.int/health-topics/coronavirus#tab=tab_1"),
+                  child: Card(
+                    elevation: 10.0,
+//                    shape: const BorderRadius.circular(20.0),
+                    child: Container(
+                      padding: EdgeInsets.only(left:5.0,right: 5.0),
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        crossAxisAlignment: CrossAxisAlignment.stretch,
+                        children: <Widget>[
+                          Image(image: AssetImage("assets/images/inq.jpg"),height: 90,width: 90,),
+                          Padding(padding: EdgeInsets.all(10.0),),
+                          Padding(
+                            padding: const EdgeInsets.only(left: 15,
+                                right: 15,bottom: 15),
+                            child: Center(child: Text('Know More',style: TextStyle(fontSize: 15.0,color: Colors.black,fontWeight: FontWeight.bold),)),
+                          ),
+//                          OutlineButton(
+//                            onPressed: ()=>navigateToWHO("https://www.who.int/health-topics/coronavirus#tab=tab_1"),
+//                            child: Text('Know More',style: TextStyle(fontSize: 15.0,color: Colors.black,fontWeight: FontWeight.bold),),
+//                          )
+                        ],
+                      ),
                     ),
                   ),
                 )
