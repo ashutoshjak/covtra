@@ -1,3 +1,4 @@
+import 'package:covid_19_tracker/authentication/checkauth.dart';
 import 'package:covid_19_tracker/pages/form.dart';
 import 'package:flutter/material.dart';
 import 'package:covid_19_tracker/pages/homepage.dart';
@@ -13,7 +14,7 @@ class _MyBottomNavigationBarState extends State<MyBottomNavigationBar> {
   int _currentIndex=0;
   final List<Widget>_children=[
     HomePage(),
-    Forms(),
+    CheckAuth(),
 
   ];
 
