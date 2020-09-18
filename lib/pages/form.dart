@@ -17,6 +17,7 @@ class _FormsState extends State<Forms> {
   String name;
   String address;
   String email;
+  String phone;
   @override
   void initState(){
     _loadUserData();
@@ -30,7 +31,9 @@ class _FormsState extends State<Forms> {
       setState(() {
         name = user['name'];
         address = user['address'];
+        phone = user['phone'];
         email = user['email'];
+
       });
     }
   }
@@ -145,6 +148,7 @@ class _FormsState extends State<Forms> {
         body: ({
           "track_title": _track_title.text,
           "track_description": _track_description.text,
+          "phone": phone,
         }))
         .then((response) {
       if (response.statusCode == 201) {

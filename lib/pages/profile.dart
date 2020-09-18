@@ -14,6 +14,7 @@ class _UserProfileState extends State<UserProfile> {
   String name;
   String address;
   String email;
+  String phone;
   @override
   void initState(){
     _loadUserData();
@@ -28,6 +29,7 @@ class _UserProfileState extends State<UserProfile> {
         name = user['name'];
         address = user['address'];
         email = user['email'];
+        phone = user['phone'];
       });
     }
   }
@@ -75,6 +77,14 @@ class _UserProfileState extends State<UserProfile> {
                       style: TextStyle(
                           fontWeight: FontWeight.bold,
                           fontSize: 20
+                      ),
+                    ),
+                    SizedBox(
+                      height: 20.0,
+                    ),
+                    Text('Phone: $phone',
+                      style: TextStyle(
+                          fontWeight: FontWeight.bold,fontSize: 20
                       ),
                     ),
                     SizedBox(
